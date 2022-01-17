@@ -1,0 +1,75 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.container{
+    max-width: 1251px;
+    margin: auto;
+}
+.pointer{
+    cursor: pointer;
+}
+.list{
+    list-style-type: none;
+}
+/* Номера в шапке */
+.numbers{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;  
+}
+.numbers__span{
+    font-weight: 400;
+    margin: 0 10px;
+}
+.header__numbers>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.header__numbers{
+    background: #F2F2F2;
+}
+/* Содержание шапки */
+ul.header__listBTN>li{
+    display: inline;
+    vertical-align: middle;
+}
+li.listBTN__item:not(:last-child){
+    margin-right: 10px;
+}
+.header_btn{
+    width: 176px;
+    height: 40px;
+}
+.header__inner>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header__logo{
+    max-width: 195px;
+}
+.header__inner{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+ul.nav__list>.nav__item{
+    display: inline;
+    justify-content: space-between;
+}
+.header__nav{
+    background: #0754A6;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__item{
+    margin-top: 19px;
+    margin-bottom: 19px;
+    color: white;
+    text-decoration: none;
+}
