@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Document</title>
@@ -16,22 +16,22 @@
 <body>
     <header class="header">
         <div class="header__numbers">
-            <div class="container">
-                <div class="numbers">
+            <div class="container flex spacebetween">
+                <div class="numbers flex aligncenter">
                     <img src="assets/img/phone.svg" alt="">
                     <span class="numbers__span">+7 (342) 203-06-88 </span> Завод в Перми
                 </div>
-                <div class="numbers">
+                <div class="numbers flex aligncenter">
                     <img src="assets/img/phone.svg" alt="">
                     <span class="numbers__span">+7 (342) 203-06-88 </span> Завод в Перми
                 </div>
-                <div class="numbers">
+                <div class="numbers flex aligncenter">
                     <img src="assets/img/phone.svg" alt="">
                     <span class="numbers__span">+7 (342) 203-06-88 </span> Завод в Перми
                 </div>
             </div>
         </div>
-        <div class="header__inner">
+        <div class="header__inner flex spacebetween aligncenter">
             <img class="Header__logo" src="assets/img/MainLogo.svg" alt="">
             <ul class="list header__listBTN">
                 <li class="listBTN__item"><img class="pointer" src="assets/img/VKlogo.svg" alt=""></li>
@@ -43,7 +43,7 @@
         </div>
         <div class="header__nav">
             <div class="container">
-                <nav class="nav">
+                <nav class="nav flex spacebetween">
                     <a href="#" class="nav__item">Компания</a>
                     <a href="#" class="nav__item">Видеоблог</a>
                     <a href="#" class="nav__item">Выполненные проекты</a>
@@ -72,9 +72,9 @@
         </div>
         <div class="advantages">
             <div class="container">
-                <ul class="advantages__list list">
+                <ul class="advantages__list list flex spacebetween aligncenter">
                     <li class="advantages__item">
-                        <div class="advantage__flex">
+                        <div class="advantage flex">
                             <h2 class="advantage__title title-blue">3</h2>
                             <img src="assets/img/Factory.svg" height="49px" alt="">
                         </div>
@@ -82,7 +82,7 @@
                         <p class="advantage__text">Охватывающих все районы города Перми и пригороды</p>
                     </li>
                     <li class="advantages__item">
-                        <div class="advantage__flex">
+                        <div class="advantage flex">
                             <h2 class="advantage__title title-blue">3500</h2>
                             <img src="assets/img/Equipment.svg" alt="">
                         </div>
@@ -90,7 +90,7 @@
                         <p class="advantage__text">Суммарная производительность оборудования</p>
                     </li>
                     <li class="advantages__item">
-                        <div class="advantage__flex">
+                        <div class="advantage flex">
                             <h2 class="advantage__title title-blue">>30</h2>
                             <img src="assets/img/ConcreteMixer.svg" alt="">
                         </div>
@@ -102,7 +102,7 @@
         </div>
         <div class="delivery">
             <div class="container">
-                <div class="delivery__text">
+                <div class="delivery__text flex aligncenter">
                     <h2 class="delivery__title">Бетонный завод «Вега» — доставка бетона в Перми</h2>
                     <p class="delivery-text">Ежегодно поставляем бетон и оказываем услуги бетононасосов в разных
                         населённых пунктах Пермского
@@ -115,45 +115,46 @@
         <div class="beton">
             <div class="container">
                 <h2 class="beton__title">Бетов наличии!</h2>
-                <ul class="beton__list list">
-                    <li class="beton__item">
-                        <div class="beton-block scale pointer">
-                            <img class="beton-img material1 scale" src="assets/img/Material1.png" alt="">
-                            <div class="beton__text">
-                                <h3 class="beton__subtitle">Бетон</h3>
-                                <div class="beton__flex">
-                                    <p class="beton-text">на гравии</p>
-                                    <img src="assets/img/Arrow.svg" alt="">
+                <div class="beton__inner">
+                    <ul class="beton__grid">
+                        <li class="beton__item scale">
+                            <div class="beton__block pointer img__relative">
+                                <img class="beton_img scale" src="assets/img/Material1.png" alt="">
+                                <div class="beton__text">
+                                    <h3 class="beton_subtitle">Бетон</h3>
+                                    <div class="flex">
+                                        <p>на гравии</p>
+                                        <img src="assets/img/Arrow.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="beton__item">
-                        <div class="beton-block scale pointer">
-                            <img class="beton-img scale" src="assets/img/Material2.png" alt="">
-                            <div class="beton__text">
-                                <h3 class="beton__subtitle">Бетон</h3>
-                                <div class="beton__flex">
-                                    <p class="beton-text">на щебне</p>
-                                    <img src="assets/img/Arrow.svg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="beton__item">
-                        <div class="beton-block scale pointer">
-                            <img class="beton-img scale" src="assets/img/Material3.png" alt="">
-                            <div class="beton__text">
-                                <h3 class="beton__subtitle">Бетон</h3>
-                                <div class="beton__flex">
-                                    <p class="beton-text">мелкозернистый</p>
-                                    <img src="assets/img/Arrow.svg" alt="">
+                        </li>
+                        <li class="beton__item scale">
+                            <div class="beton__block pointer img__relative">
+                                <img class="beton_img scale" src="assets/img/Material2.png" alt="">
+                                <div class="beton__text">
+                                    <h3 class="beton_subtitle">Бетон</h3>
+                                    <div class="flex">
+                                        <p>на гравии</p>
+                                        <img src="assets/img/Arrow.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="beton__item scale">
+                            <div class="beton__block pointer img__relative">
+                                <img class="beton_img scale" src="assets/img/Material3.png" alt="">
+                                <div class="beton__text">
+                                    <h3 class="beton_subtitle">Бетон</h3>
+                                    <div class="flex">
+                                        <p>на гравии</p>
+                                        <img src="assets/img/Arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="video">
@@ -210,8 +211,141 @@
                 </ul>
             </div>
         </div>
+        <div class="works">
+            <div class="container">
+                <div class="works__head flex spacebetween">
+                    <h2 class="works__title">Выполненные работы</h2>
+                    <button class="works__btn btn-type3 pointer">Все работы</button>
+                </div>
+                <div class="works__inner">
+                    <ul class="works__img list">
+                        <li class="works__item scale">
+                            <div class="works__block pointer">
+                                <img class="works_img scale" src="assets/img/workImg1.png" alt="">
+                            </div>
+                        </li>
+                        <li class="works__item scale">
+                            <div class="works__block pointer">
+                                <img class="works_img scale" src="assets/img/workImg2.png" alt="">
+                            </div>
+                        </li>
+                        <li class="works__item scale">
+                            <div class="works__block pointer">
+                                <img class="works_img scale" src="assets/img/workImg3.png" alt="">
+                            </div>
+                        </li>
+                        <li class="works__item scale">
+                            <div class="works__block pointer">
+                                <img class="works_img scale" src="assets/img/workImg4.png" alt="">
+                            </div>
+                        </li>
+                        <li class="works__item scale">
+                            <div class="works__block pointer img__relative">
+                                <img class="works_img scale" src="assets/img/workImg5.png" alt="">
+                                <div class="works__text">
+                                    <p>Гостиница на территории Белогорского монастыря</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="works__item scale">
+                            <div class="works__block pointer">
+                                <img class="works_img scale" src="assets/img/workImg6.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="map__title">География поставок</h2>
+            </div>
         </div>
+        <div class="map"></div>
     </main>
+    <footer>
+        <div class="footer__blockOne">
+            <div class="container flex spacebetween">
+                <div class="footer__text">
+                    <img class="footer__logo" src="assets/img/footerlogo.png" alt="">
+                    <p class="footer-text">Бетонный завод «Вега» — производитель высококачественной бетонной смеси. Мы
+                        доставляем бетон
+                        различных марок по всей территории Перми и Пермского края.
+                        Поставка бетона осуществляется собственным автопарком предприятия.</p>
+                </div>
+                <div class="footer_contacts">
+                    <div class="footer_block1">
+                        <ul class="footer__list list flex spacebetween">
+                            <li class="footer_item">
+                                <ul class="footer_nav list">
+                                    <li class="nav_item"><a href="#">Компания</a></li>
+                                    <li class="nav_item"><a href="#">Видеоблог</a></li>
+                                    <li class="nav_item"><a href="#">Выполненные проекты</a></li>
+                                    <li class="nav_item"><a href="#">Бетон</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer_item">
+                                <ul class="footer_nav list">
+                                    <li class="nav_item"><a href="#">Аренда бетононасосов</a></li>
+                                    <li class="nav_item"><a href="#">Лаборатория</a></li>
+                                    <li class="nav_item"><a href="#">Отзывы</a></li>
+                                    <li class="nav_item"><a href="#">Контакты</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer_item">
+                                <div class="mail flex aligncenter">
+                                    <img class="footer__icon" src="assets/img/email.svg" alt="">
+                                    <p>vegabeton@mail.ru</p>
+                                </div>
+                                <div class="subs">
+                                    <p>Подписаться:</p>
+                                    <ul class="list header__listBTN footer__social">
+                                        <li class="listBTN__item"><img class="pointer" src="assets/img/VKlogo.svg"
+                                                alt="">
+                                        </li>
+                                        <li class="listBTN__item"><img class="pointer" src="assets/img/YTlogo.svg"
+                                                alt="">
+                                        </li>
+                                        <li class="listBTN__item"><img class="pointer"
+                                                src="assets/img/instagramlogo.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__phones">
+                        <ul class="phone_list list flex spacebetween">
+                            <li class="phone_item flex aligncenter">
+                                <img class="footer__icon" src="assets/img/phoneFooter.svg" alt="">
+                                <div class="phone_number">
+                                    <p>+7 (342) 203-06-88</p>
+                                    <p>Завод в Перми</p>
+                                </div>
+                            </li>
+                            <li class="phone_item flex aligncenter">
+                                <img class="footer__icon" src="assets/img/phoneFooter.svg" alt="">
+                                <div class="phone_number">
+                                    <p>+7 (342) 271-04-08</p>
+                                    <p>Завод в Краснокамске</p>
+                                </div>
+                            </li>
+                            <li class="phone_item flex aligncenter">
+                                <img class="footer__icon" src="assets/img/phoneFooter.svg" alt="">
+                                <div class="phone_number">
+                                    <p>+7 (342) 203-07-88</p>
+                                    <p>Завод у Чусовского моста</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__blockTwo">
+            <div class="container">
+                <div class="byAmado flex aligncenter">
+                    <p class="byAmado__text">Создание сайта</p>
+                    <img src="assets/img/amado.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
