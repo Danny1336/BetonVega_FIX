@@ -11,7 +11,12 @@ body {
 .pointer {
     cursor: pointer;
 }
-
+.flex{
+    display: flex;
+}
+.spacebetween{
+    justify-content: space-between;
+}
 .list {
     list-style-type: none;
     padding: 0;
@@ -181,7 +186,9 @@ ul.nav__list>.nav__item {
     display: flex;
     align-items: center;
 }
-
+.delivery-text{
+    max-width: 838px;
+}
 .delivery__text {
     margin-top: 170px;
     margin-bottom: 160px;
@@ -195,7 +202,7 @@ ul.nav__list>.nav__item {
     margin-right: 10px;
     font-style: normal;
     font-weight: 300;
-    font-size: 46px;
+    font-size: 44px;
     line-height: 54px;
 }
 
@@ -271,6 +278,63 @@ ul.beton__list>.beton__item {
     line-height: 140%;
     color: #FFFFFF;
 }
+
+/* Новости */
+.news{
+    margin-top: 182px;
+    margin-bottom: 247px;
+}
+.news_btn{
+    width: 190px;
+    height: 46px; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;  
+}
+.news__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+}
+.news--block{
+    position: relative;
+}
+.news--block{
+    height: 100%;
+}
+.news-img{
+    height: 100%;
+}
+.news__text{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+.news__blockImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-rows: 300px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.news-date{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.news-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.news-item:nth-child(2) {
+    grid-column: span 2;
+}
 /* Адаптация */
 @media screen and (max-width: 1200px) {
     .container {
@@ -288,13 +352,15 @@ ul.beton__list>.beton__item {
     .container {
         width: 720px;
     }
+    .news__blockImg{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .container {
         width: 540px;
     }
-
     .banner {
         background-position: 70% 75%;
     }
