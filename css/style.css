@@ -89,15 +89,9 @@ h5 {
 }
 
 /* Содержание шапки */
-ul.header__listBTN>li {
-    display: inline;
-    vertical-align: middle;
-}
-
 li.listBTN__item:not(:last-child) {
     margin-right: 10px;
 }
-
 .header_btn {
     width: 176px;
     height: 40px;
