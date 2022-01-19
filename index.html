@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Document</title>
@@ -32,27 +33,77 @@
             </div>
         </div>
         <div class="header__inner flex spacebetween aligncenter">
-            <img class="Header__logo" src="assets/img/MainLogo.svg" alt="">
-            <ul class="list header__listBTN flex aligncenter">
-                <li class="listBTN__item"><img class="pointer" src="assets/img/VKlogo.svg" alt=""></li>
-                <li class="listBTN__item"><img class="pointer" src="assets/img/YTlogo.svg" alt=""></li>
-                <li class="listBTN__item"><img class="pointer" src="assets/img/instagramlogo.svg" alt=""></li>
-                <li class="listBTN__item"><button class="pointer header_btn btn-type1">Заказать звонок</button></li>
-                <li class="listBTN__item"><button class="pointer header_btn btn-type2">Прайс-лист</button></li>
-            </ul>
+            <div class="header__logo flex">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <img class="Header__logo" src="assets/img/MainLogo.svg" alt="">
+                <img class="Header__logoMobile" src="assets/img/MobileLogo.svg" alt="">
+            </div>
+            <div class="header__btn">
+                <ul class="list header__listBTN flex aligncenter">
+                    <li class="SocialBtn__item"><img class="pointer" src="assets/img/VKlogo.svg" alt=""></li>
+                    <li class="SocialBtn__item"><img class="pointer" src="assets/img/YTlogo.svg" alt=""></li>
+                    <li class="SocialBtn__item"><img class="pointer" src="assets/img/instagramlogo.svg" alt=""></li>
+                    <li class="phone_icon"><img class="pointer" src="assets/img/phone.svg" alt=""></li>
+                    <li class="listBTN__item"><button class="pointer header_btn btn-type1">Заказать звонок</button></li>
+                    <li class="listBTN__item"><button class="pointer header_btn btn-type2">Прайс-лист</button></li>
+                </ul>
+            </div>
         </div>
         <div class="header__nav">
             <div class="container">
-                <nav class="nav flex spacebetween">
-                    <a href="#" class="nav__item">Компания</a>
-                    <a href="#" class="nav__item">Видеоблог</a>
-                    <a href="#" class="nav__item">Выполненные проекты</a>
-                    <a href="#" class="nav__item">Бетон</a>
-                    <a href="#" class="nav__item">Аренда бетононасоса</a>
-                    <a href="#" class="nav__item">Лаборатория</a>
-                    <a href="#" class="nav__item">Отзывы</a>
-                    <a href="#" class="nav__item">Контакты</a>
-                </nav>
+                <ul class="nav list flex spacebetween">
+                    <li class="nav__item pointer">Компания</li>
+                    <li class="nav__item pointer">Видеоблог</li>
+                    <li class="nav__item pointer">Выполненные проекты</li>
+                    <li class="nav__item pointer">Бетон</li>
+                    <li class="nav__item pointer">Аренда бетононасоса</li>
+                    <li class="nav__item pointer">Лаборатория</li>
+                    <li class="nav__item pointer">Отзывы</li>
+                    <li class="nav__item pointer">Контакты</li>
+                </ul>
+                <div class="header__phones">
+                    <hr>
+                    <ul class="phone__list list flex spacebetween">
+                        <li class="phone__item flex aligncenter">
+                            <img class="footer__icon" src="assets/img/phone.svg" alt="">
+                            <div class="phone_number">
+                                <p>+7 (342) 203-06-88</p>
+                                <p>Завод в Перми</p>
+                            </div>
+                        </li>
+                        <li class="phone__item flex aligncenter">
+                            <img class="footer__icon" src="assets/img/phone.svg" alt="">
+                            <div class="phone_number">
+                                <p>+7 (342) 271-04-08</p>
+                                <p>Завод в Краснокамске</p>
+                            </div>
+                        </li>
+                        <li class="phone__item flex aligncenter">
+                            <img class="footer__icon" src="assets/img/phone.svg" alt="">
+                            <div class="phone_number">
+                                <p>+7 (342) 203-07-88</p>
+                                <p>Завод у Чусовского моста</p>
+                            </div>
+                        </li>
+                        <hr>
+                        <div class="burger__mail flex aligncenter">
+                            <img class="footer__icon" src="assets/img/message1.svg" alt="">
+                            <p>vegabeton@mail.ru</p>
+                        </div>
+                        <div class="social_buttons">
+                            <ul class="list SocialBtn__item flex">
+                                <li class="listBTN__item"><img class="pointer" src="assets/img/VKlogo.svg" alt="">
+                                </li>
+                                <li class="listBTN__item"><img class="pointer" src="assets/img/YTlogo.svg" alt="">
+                                </li>
+                                <li class="listBTN__item"><img class="pointer" src="assets/img/instagramlogo.svg"
+                                        alt=""></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -62,10 +113,13 @@
                 <div class="container">
                     <div class="banner__content">
                         <h1 class="banner__title title"><span class="title__span">Превосходим</span><br>ожидания!</h1>
+                        <h1 class="banner__title2 title">Проверяем бетон<br><span class="title__span">на прочность!</span></h1>
                         <p>Бетон с запасом по прочности<br>
                             до 30% от заявленного класса</p>
+                            <div class="banner__button flex">
                         <button class="pointer intro_btn btn-type1">Отправить заявку</button>
                         <button class="pointer intro_btn btn-type3">Прайс-лист</button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +156,7 @@
         </div>
         <div class="delivery">
             <div class="container">
-                <div class="delivery__text flex aligncenter">
+                <div class="flex aligncenter delivery__text">
                     <h2 class="delivery__title">Бетонный завод «Вега» — доставка бетона в Перми</h2>
                     <p class="delivery-text">Ежегодно поставляем бетон и оказываем услуги бетононасосов в разных
                         населённых пунктах Пермского
@@ -122,9 +176,9 @@
                                 <img class="beton_img scale" src="assets/img/Material1.png" alt="">
                                 <div class="beton__text">
                                     <h3 class="beton_subtitle">Бетон</h3>
-                                    <div class="flex">
+                                    <div class="beton__material flex">
                                         <p>на гравии</p>
-                                        <img src="assets/img/Arrow.svg" alt="">
+                                        <img class="arrow__icon" src="assets/img/Arrow.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -134,9 +188,9 @@
                                 <img class="beton_img scale" src="assets/img/Material2.png" alt="">
                                 <div class="beton__text">
                                     <h3 class="beton_subtitle">Бетон</h3>
-                                    <div class="flex">
+                                    <div class="beton__material flex">
                                         <p>на гравии</p>
-                                        <img src="assets/img/Arrow.svg" alt="">
+                                        <img class="arrow__icon" src="assets/img/Arrow.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -146,9 +200,9 @@
                                 <img class="beton_img scale" src="assets/img/Material3.png" alt="">
                                 <div class="beton__text">
                                     <h3 class="beton_subtitle">Бетон</h3>
-                                    <div class="flex">
+                                    <div class="beton__material flex">
                                         <p>на гравии</p>
-                                        <img src="assets/img/Arrow.svg" alt="">
+                                        <img class="arrow__icon" src="assets/img/Arrow.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +220,7 @@
             <div class="container">
                 <div class="news__blockTitle flex spacebetween">
                     <h2 class="news__title">Новости</h2>
-                    <button class="pointer news_btn btn-type2">Все новости</button>
+                    <button class="btn_desk pointer news_btn btn-type2">Все новости</button>
                 </div>
                 <ul class="news__blockImg list">
                     <li class="news-item scale">
@@ -203,19 +257,22 @@
                         <div class="news--block pointer">
                             <img class="news-img  scale" src="assets/img/New4.png" alt="">
                             <div class="news__text">
-                                <p class="news_date">07.04.2020</p>
+                                <p class="news-date">07.04.2020</p>
                                 <p class="news-text">Бетонные заводы компании «Вега» продолжают работу</p>
                             </div>
                         </div>
                     </li>
                 </ul>
+                <div class="button__mobile">
+                    <button class="news_btn btn-type2 pointer">Все работы</button>
+                </div>
             </div>
         </div>
         <div class="works">
             <div class="container">
                 <div class="works__head flex spacebetween">
                     <h2 class="works__title">Выполненные работы</h2>
-                    <button class="works__btn btn-type3 pointer">Все работы</button>
+                    <button class="btn_desk works__btn btn-type3 pointer">Все работы</button>
                 </div>
                 <div class="works__inner">
                     <ul class="works__img list">
@@ -236,7 +293,7 @@
                         </li>
                         <li class="works__item scale">
                             <div class="works__block pointer">
-                                <img class="works_img scale" src="assets/img/workImg4.png" alt="">
+                                <img class="works_img scale" src="assets/img/MaskGroup.png" alt="">
                             </div>
                         </li>
                         <li class="works__item scale">
@@ -253,6 +310,9 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="button__mobile">
+                        <button class="works__btn btn-type3 pointer">Все работы</button>
+                    </div>
                 </div>
                 <h2 class="map__title">География поставок</h2>
             </div>
@@ -346,6 +406,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
