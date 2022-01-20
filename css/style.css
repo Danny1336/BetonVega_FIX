@@ -845,6 +845,7 @@ footer {
     }
     .banner__title2{
         display: block;
+        margin-bottom: 30px;
         font-size: calc(100vw / 11);
     }
     .banner__content{
